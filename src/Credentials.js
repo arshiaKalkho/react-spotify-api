@@ -1,7 +1,7 @@
 const Credentials = () => {
 
-    return {ClientId: 'ADDYOUROWN',
-    ClientSecret: 'ADDYOUROWN'
+    return {ClientId: 'ADDYOUROWN     ',
+    ClientSecret: 'ADDYOUROWN    '
         
     }
 }
