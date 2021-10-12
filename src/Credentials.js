@@ -1,9 +1,9 @@
 const Credentials = () => {
 
     return {ClientId: 'ADDYOUROWN     ',
-    ClientSecret: 'ADDYOUROWN    '
+    ClientSecret: 'ADDYOUROWN    '   
         
     }
 }
 
-export { Credentials };
+export { Credentials   };
