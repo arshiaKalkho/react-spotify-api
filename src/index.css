@@ -1,6 +1,19 @@
+#root{
+  background-color: #4d4d4d;
+  color:white;
+}
+.list-group-item{
+  background-color: #555555;
+  color:white;
+}
+
 .btn.dropdown-toggle  {
   width:150px;
   text-align:left;
+}
+.form-control{
+  background-color: #555555;
+  color: white;
 }
 
 span.caret {
@@ -15,6 +28,7 @@ label {
 
 .form-label {
   padding-left:0px !important;
+  color: white;
 }
 
 img {
@@ -31,5 +45,9 @@ img {
 }
 
 img.track {
-  border: 1px solid #8a8a8a;
+  border: 1px solid #555555;
+}
+.songs-list{
+  max-height: 20px;
+  overflow-y: scroll;
 }

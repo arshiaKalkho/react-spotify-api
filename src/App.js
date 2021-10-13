@@ -134,17 +134,17 @@ const App = () => {
   return (
     <div className="container">
       <form onSubmit={buttonClicked}>        
-          <Dropdown label="Genre :" options={genres.listOfGenresFromAPI} selectedValue={genres.selectedGenre} changed={genreChanged} />
-          <Dropdown label="Playlist :" options={playlist.listOfPlaylistFromAPI} selectedValue={playlist.selectedPlaylist} changed={playlistChanged} />
-          <div className="col-sm-6 row form-group px-0">
+          <Dropdown label="Genre:" options={genres.listOfGenresFromAPI} selectedValue={genres.selectedGenre} changed={genreChanged} />
+          <Dropdown label="Playlist:" options={playlist.listOfPlaylistFromAPI} selectedValue={playlist.selectedPlaylist} changed={playlistChanged} />
+          <div className=" form-group px-0">
             <button type='submit' className="btn btn-success col-sm-12">
               Search
             </button>
           </div>
-          <div className="row">
-            <Listbox items={tracks.listOfTracksFromAPI} clicked={listboxClicked} />
+          
+            <Listbox className="songs-list" items={tracks.listOfTracksFromAPI} clicked={listboxClicked} />
             {trackDetail && <Detail {...trackDetail} /> }
-          </div>        
+                
       </form>
     </div>
     
