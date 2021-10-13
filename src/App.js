@@ -4,6 +4,8 @@ import Listbox from './Listbox';
 import Detail from './Detail';
 import { Credentials } from './Credentials';
 import axios from 'axios';
+import Logo from './logo.svg'
+
 
 const App = () => {
 
@@ -88,7 +90,7 @@ const App = () => {
   
   const buttonClicked = e => {
     e.preventDefault();
-
+    
     axios(`https://api.spotify.com/v1/playlists/${playlist.selectedPlaylist}/tracks?limit=10`, {
       method: 'GET',
       headers: {
@@ -132,7 +134,14 @@ const App = () => {
   
   
   return (
+    
+    
+    <>
+    <div className="App-header">
+    <img className="App-logo" src={Logo} alt="logo"/> 
+  </div>
     <div className="container">
+      
       <form onSubmit={buttonClicked}>        
           <Dropdown label="Genre:" options={genres.listOfGenresFromAPI} selectedValue={genres.selectedGenre} changed={genreChanged} />
           <Dropdown label="Playlist:" options={playlist.listOfPlaylistFromAPI} selectedValue={playlist.selectedPlaylist} changed={playlistChanged} />
@@ -147,7 +156,7 @@ const App = () => {
                 
       </form>
     </div>
-    
+    </>
     
   );
 }
