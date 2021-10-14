@@ -1,2 +1,3 @@
 **/node_modules
 src/Credentials.js
+react-spotify-api/.env

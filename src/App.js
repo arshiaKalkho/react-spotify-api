@@ -10,7 +10,7 @@ import Logo from './logo.svg'
 const App = () => {
   //accessing environment variables on server instead of a static file
   //const spotify = Credentials();  
-  
+  let spotify={ClientId:"",ClientSecret:""} 
   spotify.ClientId= process.env.REACT_APP_SPOTIFY_CLIENT;
   spotify.ClientSecret= process.env.REACT_APP_SPOTIFY_SECRET;
 
