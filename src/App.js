@@ -2,14 +2,17 @@ import React, { useState, useEffect } from 'react';
 import Dropdown from './Dropdown';
 import Listbox from './Listbox';
 import Detail from './Detail';
-import { Credentials } from './Credentials';
+//import { Credentials } from './Credentials';
 import axios from 'axios';
 import Logo from './logo.svg'
 
 
 const App = () => {
-
-  const spotify = Credentials();  
+  //accessing environment variables on server instead of a static file
+  //const spotify = Credentials();  
+  let spotify = {ClientId:"" , ClientSecret:""};
+  spotify.ClientId=REACT_APP_SPOTIFY_CLIENT;
+  spotify.ClientSecret=REACT_APP_SPOTIFY_SECRET;
 
 
   const [token, setToken] = useState('');  
