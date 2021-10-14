@@ -73,10 +73,6 @@ const App = () => {
 
     console.log(val);
   }
-
-  
-  
-  
   
   const playlistChanged = val => {
     console.log(val);
@@ -86,15 +82,13 @@ const App = () => {
     });
   }
 
-  
-  
-  
-  
-  
+
   const buttonClicked = e => {
     e.preventDefault();
     
-    axios(`https://api.spotify.com/v1/playlists/${playlist.selectedPlaylist}/tracks?limit=10`, {
+    if(playlist.selectedPlaylist !== ""){//must choose a value
+    
+    axios(`https://api.spotify.com/v1/playlists/${playlist.selectedPlaylist}/tracks?limit=20`, {
       method: 'GET',
       headers: {
         'Authorization' : 'Bearer ' + token
@@ -107,11 +101,8 @@ const App = () => {
       })
     });
   }
-
   
-  
-  
-  
+}
   
   
   const listboxClicked = val => {
