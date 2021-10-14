@@ -4,7 +4,8 @@ import Listbox from './Listbox';
 import Detail from './Detail';
 //import { Credentials } from './Credentials';
 import axios from 'axios';
-import Logo from './logo.svg'
+import Logo from './logo.svg';
+
 
 
 const App = () => {
@@ -132,15 +133,18 @@ const App = () => {
     
     <>
     <div className="App-header">
+      <h3>Arshia Kalkhorani</h3>
     <img className="App-logo" src={Logo} alt="logo"/> 
+      <h3><a href="https://github.com/arshiaKalkho/react-spotify-api">GitHub</a></h3>
   </div>
+    <p className="summery">this react app will send a get request to spotify api, then it displays the response as a list of songs that you can select to see their detail</p>
     <div className="container">
       
       <form onSubmit={buttonClicked}>        
           <Dropdown label="Genre:" options={genres.listOfGenresFromAPI} selectedValue={genres.selectedGenre} changed={genreChanged} />
           <Dropdown label="Playlist:" options={playlist.listOfPlaylistFromAPI} selectedValue={playlist.selectedPlaylist} changed={playlistChanged} />
           <div className=" form-group px-0">
-            <button type='submit' className="btn btn-success col-sm-12">
+            <button type='submit' className="btn btn-success col-12">
               Search
             </button>
           </div>

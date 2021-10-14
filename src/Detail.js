@@ -4,21 +4,23 @@ const Detail = ({album, artists, name}) => {
 
     return (
         <div className="image-div" >
-            <div className="row col-sm-12 px-0">
+            <div className="image ">
                 <img 
                     src={album.images[0].url}
                     alt={name}>                    
                 </img>
             </div>
-            <div className="song-name">
-                <label htmlFor={name} className="form-label col-sm-12">
-                    {name}
-                </label>
-            </div>
-            <div className="artist-name">
-                <label htmlFor={artists[0].name} className="form-label col-sm-12">
-                    {artists[0].name}
-                </label>
+            <div className="img-info">
+                <div className="song-name">
+                    <label htmlFor={name} className="form-label">
+                        {name}
+                    </label>
+                </div>
+                <div className="artist-name">
+                    <label htmlFor={artists[0].name} className="form-label">
+                        {artists[0].name}
+                    </label>
+                </div>
             </div>
         </div>
     );

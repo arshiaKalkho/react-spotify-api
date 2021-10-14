@@ -1,13 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akronim&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-#root{
-  background-color: #333333;
+#root {
+  background-color: #292929;
   color: rgb(62, 199, 97);
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
-
-
 
 .App {
   text-align: center;
@@ -15,33 +13,35 @@
 .App-logo {
   height: 10vh;
   width: 10vh;
-  
-  
+
   pointer-events: none;
- 
 }
 .App-header {
-  background-color: #333333;
+  background-color: #292929;
 
   min-height: 2vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
-  
 }
-
-.list-group-item{
+.App-header h3 {
+  font-family: "Akronim", cursive;
+  color: rgb(62, 199, 97);
+}
+.list-group-item {
   background-color: #555555;
   color: rgb(62, 199, 97);
 }
-
-.btn.dropdown-toggle  {
-  width:150px;
-  text-align:left;
+.summery {
+  text-align: center;
 }
-.form-control{
+.btn.dropdown-toggle {
+  width: 150px;
+  text-align: left;
+}
+.form-control {
   background-color: #555555;
   color: rgb(62, 199, 97);
 }
@@ -53,31 +53,47 @@ span.caret {
 }
 
 label {
-  padding-top:5px;
+  padding-top: 5px;
 }
 
 .form-label {
-  padding-left:0px !important;
+  padding-left: 0px;
   color: rgb(62, 199, 97);
 }
 
 img {
-  width:140px;
-  height:140px;
+  width: 40vh;
+  height: 40vh;
+  margin-top: 2px;
+  border-radius: 10px;
 }
-
+.image-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(65, 65, 65);
+  border-radius: 10px;
+}
+.img-info > div {
+  border-radius: 10px;
+  height: 20vh;
+  text-align: center;
+  font-size: larger;
+  padding-top: 3vh;
+}
 .btn-success {
-  background-color: #3b7d4a!important;
+  background-color: #3b7d4a;
 }
 
 .btn-success:hover {
-  background-color: #4daf64!important;
+  background-color: #4daf64;
 }
 
 img.track {
   border: 1px solid #1f1e1e;
 }
-.list-group{
+.list-group {
   max-height: 200px;
   overflow-y: scroll;
 }
@@ -92,4 +108,20 @@ img.track {
 ::-webkit-scrollbar-thumb {
   background-color: rgb(62, 199, 97);
   border-radius: 100vw;
+}
+@media only screen and (max-width: 1000px) {
+  .img-info > div {
+    margin-left: 14vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .image-div {
+    flex-direction: column;
+  }
+  .img-info > div {
+    margin: 0px;
+    padding: 0px;
+    height: 10vh;
+  }
 }
