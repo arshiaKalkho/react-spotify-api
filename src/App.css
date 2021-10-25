@@ -109,6 +109,14 @@ img.track {
   background-color: rgb(62, 199, 97);
   border-radius: 100vw;
 }
+iframe{
+  margin-top: 2vh;
+  border-radius: 10px;
+}
+.playlist-header{
+  margin-top: 10vh;
+  text-align: center;
+}
 @media only screen and (max-width: 1000px) {
   .img-info > div {
     margin-left: 14vw;

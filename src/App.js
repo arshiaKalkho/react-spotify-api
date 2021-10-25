@@ -153,6 +153,8 @@ const App = () => {
             {trackDetail && <Detail {...trackDetail} /> }
                 
       </form>
+      <h2 className="playlist-header">What I listen to:</h2>
+      <iframe src="https://open.spotify.com/embed/playlist/471zfm8VFFY54vwtcV0BeS?theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     </div>
     </>
     
