@@ -133,7 +133,7 @@ const App = () => {
     
     <>
     <div className="App-header">
-      <h3><a href="https://express-hub.herokuapp.com/login">back</a></h3>
+      <h3><a href="https://express-hub.herokuapp.com">back</a></h3>
     <img className="App-logo" src={Logo} alt="logo"/> 
       <h3><a href="https://github.com/arshiaKalkho/react-spotify-api">GitHub</a></h3>
   </div>
